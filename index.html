@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Voronoi Diagram Interactive tool</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">Voronoi Diagram using Fortune's Algorithm</h1>
+    <div style="text-align: center;">
+      <svg id="canvas" width="600" height="400" style="border: 2px solid black;" xmlns="http://www.w3.org/2000/svg" onclick="addPoint(event)"></svg>
+    </div>
+    <div id="panel" style="text-align: center;">
+        <input type="button" id="reset-btn" value="Reset" onclick="reset()">
+    </div>
+    <script src="graphics.js"> </script>
+    <script src="voronoi.js"> </script>
+  </body>
+
+</html>
